@@ -8,7 +8,16 @@ namespace GarageApplication
 {
     class GarageHandler
     {
-        // abstrac class between Garage and UserMenu class
+        //abstrac class between Garage and UserMenu class
+        //public List<Garage<Verhicle>> garages { get; set; }
+        //public int garageId { get; set; }
 
+        //public GarageHandler()
+        //{
+
+        //}
+
+        
+        
     }
 }

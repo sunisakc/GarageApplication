@@ -9,10 +9,15 @@ namespace GarageApplication
 {
     class Garage<T> : IEnumerable<T> where T : Verhicle
     {
+        //private int regNr;
+        //private int name;
+        //private int capacity;
+        //private int count;
+        //private bool isAvailable;
+        //private T[] listArray;
 
 
-        // Collection  of Vehicles.
-        
+
         public IEnumerator<T> GetEnumerator()
         {
             throw new NotImplementedException();

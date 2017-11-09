@@ -8,18 +8,25 @@ namespace GarageApplication
 {
     class Boat : Verhicle
     {
-        private string typeOfBoat;
+
         private int height;
 
-        public string TypeOfBoat { get; set; }
-        public int Height { get; set; }
-        
+
+
+        public int Height
+        {
+            get { return height; }
+            set { height = value; }
+
+        }
+
         public Boat(): base() { }
 
-        public Boat(int registerNumber, string color, int numberofWheel, int numberOfSeats, string typeOfBoat, int height) :
+        public Boat(int registerNumber, string color, int numberofWheel, int numberOfSeats,  int height) :
             base(registerNumber, color, numberofWheel)
         {
-
+           
+            Height = height;
         }
     }
 }
