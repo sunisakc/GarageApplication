@@ -46,7 +46,7 @@ namespace GarageApplication
 
         public Garage(int cap)
         {
-            cap = Capacity;
+            Capacity = cap;
             vehicleArray = new T[capacity];
         }
 

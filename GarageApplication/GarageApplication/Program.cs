@@ -18,8 +18,10 @@ namespace GarageApplication
 
             Garage<Vehicle> garage;
             garage = new Garage<Vehicle>(5);
-            Boat boat = new Boat(123, "red", 5, 5, 100);
+            Boat boat = new Boat(123, "red", 0, 5, 100);
+            Car car = new Car(666, "Blue", 4, 5);
             garage.Park(boat);
+            garage.Park(car);
 
             foreach (var vehicle in garage)
             {

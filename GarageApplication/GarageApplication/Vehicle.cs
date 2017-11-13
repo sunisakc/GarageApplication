@@ -57,8 +57,8 @@ namespace GarageApplication
 
         public virtual string PrintVehicle()
         {
-            return RegistNumber + "\n" +
-                Color + "\n" + NumberofWheel + ".";
+            return "Regnr: " + RegistNumber + "\n" +
+                "Color: " + Color + "\n" + "Nr of wheels: " + NumberofWheel + ".";
         }
 
     }
