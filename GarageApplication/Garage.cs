@@ -70,9 +70,9 @@ namespace GarageApplication
             if(count < capacity)
             {
                 listVehicle.Remove(input);
-                foreach( var i in listVehicle.Where(x => x.Name.StartsWith(x.Name)))
+                foreach( var i in listVehicle.Where(x => x.RegNumber.StartsWith(x.RegNumber)))
                 {
-                    Console.WriteLine("Your vehicle is deleted and Thank you for parking");
+                    Console.WriteLine("Your vehicle is unparked and Thank you for parking");
                 }
                 Console.WriteLine("Your garage is " + Count);
                 Console.ReadLine();

@@ -69,7 +69,7 @@ namespace GarageApplication
 
         public override string ToString()
         {
-            return "Vehicle register number is:" + name +
+            return 
                 "\nVehicle register number is:" + regNumber +
             "\nVehicle color is:" + Color +
             "\nVehicle has " + numberOfWheel + "number of wheel";
