@@ -12,8 +12,8 @@ namespace GarageApplication
         {
 
             {
+                Garage<Vehicle> gr = new Garage<Vehicle>(21);
 
-                List<Vehicle> listVehicle = new List<Vehicle>();
                 bool run = true;
                 while (true)
                 {
@@ -38,10 +38,10 @@ namespace GarageApplication
                     switch (input)
                     {
                         case '1':
-                            CreateSlot();
+                            gr=CreateSlot();
                             break;
                         case '2':
-                            AddVehicle();
+                            AddVehicle(gr);
                             break;
                         case '3':
                             Unpark();
@@ -67,7 +67,7 @@ namespace GarageApplication
         }
 
 
-       public static void CreateSlot()
+       public static Garage<Vehicle> CreateSlot()
         {
             Console.Clear();
 
@@ -75,34 +75,33 @@ namespace GarageApplication
 
 
                 Console.Clear();
-                Console.WriteLine("How many slot do you need?");
-
-
-                int maxCapSize = 0;
-                Garage<Vehicle> sizeCapacity = new Garage<Vehicle>(maxCapSize);
+                Console.WriteLine("How many slot do you need?");                
 
                 string maxSlot = Console.ReadLine();
                 int nr;
-                while (int.TryParse(maxSlot, out nr))
+                while (!int.TryParse(maxSlot, out nr))
                 {
 
-                    for (int i = 1; i <= nr; i++)
-                    {
-                        Console.WriteLine("You create" + i + "Slot");
+                    //for (int i = 1; i <= nr; i++)
+                    //{
+                    //    Console.WriteLine("You create" + i + "Slot");
 
-                    }
+                    //}
+                    Console.WriteLine("How many slot do you need?");
                     maxSlot = Console.ReadLine();
                 }
+                Garage<Vehicle> sizeCapacity = new Garage<Vehicle>(nr);
 
+                return sizeCapacity;
 
             }
 
         }
 
 
-            public static void AddVehicle()
+            public static void AddVehicle(Garage<Vehicle> gr)
         {
-            List<Vehicle> listvehicle = new List<Vehicle>();
+            //List<Vehicle> listvehicle = new List<Vehicle>();
             Console.Clear();
                 Console.WriteLine("Please enter infomation");
                 string input = " ";
@@ -117,7 +116,10 @@ namespace GarageApplication
 
             //Console.WriteLine(grcreator.ToString());
 
-               listvehicle.Add(new Vehicle("Toyota", 21, 4));
+               Vehicle ve= new Vehicle(regNumber, "red", 4);
+            //Garage<Vehicle> gr = new Garage<Vehicle>(21);
+            gr.Park(ve);
+            gr.ListofVehicle();
 
 
                 Console.ReadLine();
