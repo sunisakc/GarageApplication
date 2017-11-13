@@ -19,7 +19,7 @@ namespace GarageApplication.Vehicles
 
         public Motorcycle() : base() { }
 
-        public Motorcycle(string regNumber, string color, int numberofWheel, int cylindervolume) :
+        public Motorcycle(string regNumber, string color, string numberofWheel, int cylindervolume) :
            base(regNumber, color, numberofWheel)
         {
 

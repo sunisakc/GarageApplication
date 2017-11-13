@@ -11,7 +11,7 @@ namespace GarageApplication
         private string name;
         private string regNumber;
         private string color;
-        private int numberOfWheel;
+        private string numberOfWheel;
 
 
         public string Name
@@ -41,7 +41,7 @@ namespace GarageApplication
                 color = value;
             }
         }
-        public int NumberofWheel
+        public string NumberofWheel
         {
             get
             {
@@ -58,7 +58,7 @@ namespace GarageApplication
 
         public Vehicle() { }
 
-        public Vehicle(string regNumber, string color, int numberofWheel)
+        public Vehicle(string regNumber, string color, string numberofWheel)
         {
             RegNumber = regNumber;
             Color = color;

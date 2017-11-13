@@ -22,7 +22,7 @@ namespace GarageApplication.Vehicles
         public Bus() : base() { }
 
 
-        public Bus(string regNumber, string color, int numberofWheel, int weight) :
+        public Bus(string regNumber, string color, string numberofWheel, int weight) :
                   base(regNumber, color, numberofWheel)
 
         {
