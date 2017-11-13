@@ -23,7 +23,7 @@ namespace GarageApplication.Vehicles
 
         public Airplane() : base() { }
 
-        public Airplane(string regNumber, string color, int numberofWheel, int numberofEngine) :
+        public Airplane(string regNumber, string color, string numberofWheel, int numberofEngine) :
             base(regNumber, color, numberofWheel)
         {
             NumberOfEngines = numberofEngines;

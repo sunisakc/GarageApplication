@@ -112,11 +112,11 @@ namespace GarageApplication
                 Console.WriteLine("What is your register number?");
                 string regNumber = Console.ReadLine();
                 Console.WriteLine("How many wheel is your vehicle?");
-                string numberofWheel = Console.ReadLine();
+                 string numberofWheel = Console.ReadLine();
 
             //Console.WriteLine(grcreator.ToString());
 
-               Vehicle ve= new Vehicle(regNumber, "red", 4);
+               Vehicle ve= new Vehicle(regNumber, "red", numberofWheel);
             //Garage<Vehicle> gr = new Garage<Vehicle>(21);
             gr.Park(ve);
             gr.ListofVehicle();
