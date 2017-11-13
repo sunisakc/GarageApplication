@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GarageApplication
 {
-    class Verhicle
+    class Vehicle
     {
         private int registerNumber;
         private string color;
@@ -46,14 +46,20 @@ namespace GarageApplication
                 
               }
 
-        public Verhicle () { }
+        public Vehicle () { }
 
-        public Verhicle( int registerNumber, string color, int numberofWheel)
+        public Vehicle( int registerNumber, string color, int numberofWheel)
         {
             RegistNumber = registerNumber;
             Color = color;
             NumberofWheel = numberofWheel;
         }
-        
+
+        public virtual string PrintVehicle()
+        {
+            return RegistNumber + "\n" +
+                Color + "\n" + NumberofWheel + ".";
+        }
+
     }
 }

@@ -16,27 +16,38 @@ namespace GarageApplication
 
             Console.WriteLine("Welcome to our magic garage");
 
-            int[] userInput = new int[21];
-            int counter = 0;
+            Garage<Vehicle> garage;
+            garage = new Garage<Vehicle>(5);
+            Boat boat = new Boat(123, "red", 5, 5, 100);
+            garage.Park(boat);
 
-            for (counter = 0; counter < userInput.Length; counter++)
+            foreach (var vehicle in garage)
             {
-                string input = Console.ReadLine();
-
-                if (input == "")
-                    break;
-                else
-                    int.TryParse(input, out userInput[counter]);
+                Console.WriteLine(vehicle.PrintVehicle() + "\n----------------------\n");
             }
-            for (int i = 0; i < counter; i++)
-            {
-                Console.WriteLine(userInput[i]);
-            }
-            Console.ReadLine();
-           
+
+            Console.ReadKey();
+            //int[] userInput = new int[21];
+            //int counter = 0;
+
+            //for (counter = 0; counter < userInput.Length; counter++)
+            //{
+            //    string input = Console.ReadLine();
+
+            //    if (input == "")
+            //        break;
+            //    else
+            //        int.TryParse(input, out userInput[counter]);
+            //}
+            //for (int i = 0; i < counter; i++)
+            //{
+            //    Console.WriteLine(userInput[i]);
+            //}
+            //Console.ReadLine();
 
 
-            }
+
+        }
 
     }
     }

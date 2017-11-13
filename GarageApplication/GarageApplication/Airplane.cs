@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GarageApplication
 {
-    class Airplane : Verhicle
+    class Airplane : Vehicle
     {
         private int numberofEngines;
         private int length;

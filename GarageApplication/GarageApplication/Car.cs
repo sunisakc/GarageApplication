@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GarageApplication
 {
-    class Car : Verhicle
+    class Car : Vehicle
     {
         private int numberOfSeats;
 

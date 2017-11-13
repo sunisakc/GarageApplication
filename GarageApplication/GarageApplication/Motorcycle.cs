@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GarageApplication
 {
-    class Motorcycle : Verhicle
+    class Motorcycle : Vehicle
     {
         private int cylindervolume;
 

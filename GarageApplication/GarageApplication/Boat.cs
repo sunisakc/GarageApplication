@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GarageApplication
 {
-    class Boat : Verhicle
+    class Boat : Vehicle
     {
 
         private int height;
