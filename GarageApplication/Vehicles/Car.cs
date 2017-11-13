@@ -20,7 +20,7 @@ namespace GarageApplication.Vehicles
         public Car() : base() { }
 
 
-        public Car(string regNumber, string color, string numberofWheel, int numberOfSeats) :
+        public Car(string regNumber, string color, int numberofWheel, int numberOfSeats) :
                   base(regNumber, color, numberofWheel)
 
         {

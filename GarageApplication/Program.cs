@@ -159,12 +159,31 @@ namespace GarageApplication
             //    Console.WriteLine("How many wheel is your vehicle?");
             //    string numberofWheel = Console.ReadLine();
 
+                //Console.WriteLine("Please enter infomation");
+                //string input = " ";
+                ////int nr = int.Parse(Console.ReadLine());
+                ////Garage<Vehicle> grcreator = new Garage<Vehicle>(nr);
+                //Console.WriteLine("What is your vehicle type?");
+                //string vrtype = Console.ReadLine();
+                //Console.WriteLine("What is your register number?");
+                //string regNumber = Console.ReadLine();
+                //Console.WriteLine("How many wheel is your vehicle?");
+                // string numberofWheel = Console.ReadLine();
+
+
             ////Console.WriteLine(grcreator.ToString());
+
 
             //   Vehicle ve= new Vehicle(regNumber, "red", 4);
             ////Garage<Vehicle> gr = new Garage<Vehicle>(21);
             //gr.Park(ve);
             //gr.ListofVehicle();
+
+            //   Vehicle ve= new Vehicle(regNumber, "red", numberofWheel);
+            ////Garage<Vehicle> gr = new Garage<Vehicle>(21);
+            //gr.Park(ve);
+            //gr.ListofVehicle();
+
 
 
             //    Console.ReadLine();
